@@ -1,0 +1,14 @@
+### 运行环境要求
+1. 操作系统：Windows 10/11
+2. Python版本：3.9.x
+3. 虚拟环境：conda create -n accident python=3.9
+4. 安装依赖：
+   conda activate accident
+   pip install ultralytics==8.4.13
+   pip install torch==2.2.0+cu118
+   pip install opencv-python==4.9.0.80
+
+### 运行方式
+1. 激活环境：conda activate accident
+2. 运行修复脚本：python final_infer_fix.py
+3. 查看结果：控制台输出“验收通过”，生成10189_fixed.jpg

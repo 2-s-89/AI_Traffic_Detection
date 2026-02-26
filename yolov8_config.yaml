@@ -1,0 +1,13 @@
+path: D:/AI_Traffic_Detection/data/processed
+train: train/images
+val: val/images
+nc: 2
+names: ['construction','illegal_crossing']
+batch: 8
+epochs: 30
+imgsz: 480
+# 新增超参数优化
+lr0: 0.005          # 初始学习率（适配小模型）
+lrf: 0.1            # 学习率衰减因子
+weight_decay: 0.0001 # 权重衰减（防止过拟合）
+warmup_epochs: 2.0  # 热身轮数（稳定训练初期）
